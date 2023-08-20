@@ -1,9 +1,7 @@
-import Photo from './spaghett.jpg'
-
 const pageLoad = function () {
     const content = document.getElementById('content');
-    let img = new Image();
-    img.src = Photo;
+    let img = document.createElement('div');
+    img.classList.add("banner");
     let header = document.createElement('h1');
     header.textContent = "The Salty Spitoon";
     let description = document.createElement('p');
