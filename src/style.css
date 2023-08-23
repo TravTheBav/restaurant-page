@@ -16,6 +16,7 @@
 html {
     font-size: 12px;
     color: white;
+    min-height: 100%;
 }
 
 html, body {
@@ -23,12 +24,23 @@ html, body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
 header {
-    background-image: url('purple-wood-texture.jpg');
+    background-image: url('textures/purple-wood-texture.jpg');
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 1rem;
+}
+
+p {
+    word-break: break-word;
 }
 
 .kuddly-text {
@@ -42,17 +54,13 @@ header {
     font-size: 3.5rem;
 }
 
-.large-header {
-    font-size: 5rem;
-}
-
 .centered {
     text-align: center;
 }
 
 body {
     min-height: 100%;
-    background-image: url('kuddly-krab.png');
+    background-image: url('./textures/kuddly-krab-tile.png');
     background-repeat: repeat;
 }
 
@@ -65,6 +73,20 @@ nav {
     border-bottom: solid 3px black;
     border-top: solid 3px black;
     margin-bottom: 4rem;
+}
+
+footer {
+    margin-top: 4rem;
+    background-color: blueviolet;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0px;
+}
+
+footer a {
+    color: #00ff7f;
 }
 
 .tab {
@@ -91,7 +113,6 @@ h1 {
 .card-info {
     font-size: 2rem;
     font-family: "QueensidesMedium", 'Times New Roman', Times, serif;
-    text-align: center;
 }
 
 .img-container {

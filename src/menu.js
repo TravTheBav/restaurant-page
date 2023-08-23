@@ -5,7 +5,7 @@ const loadMenu = function () {
     pageContent.classList.add('content');
 
     const menuHeader = document.createElement('h1');
-    menuHeader.classList.add('fancy-text', 'large-header', 'centered');
+    menuHeader.classList.add('fancy-text', 'centered');
     menuHeader.textContent = ("Kuddly Krab Menu");
 
     const menuLine = document.createElement('hr');

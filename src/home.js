@@ -1,4 +1,4 @@
-import Photo from './kuddly-krab-sign.jpg';
+import Photo from './images/kuddly-krab-sign.jpg';
 
 const loadHome = function () {
     const mainContent = document.querySelector('main');
@@ -11,11 +11,11 @@ const loadHome = function () {
 
     const cardTitle = document.createElement('h1');
     cardTitle.textContent = "The Kuddly Krab!";
-    cardTitle.classList.add("kuddly-text", "large-header", "centered");
+    cardTitle.classList.add("kuddly-text", "centered");
 
     const cardInfo = document.createElement('p');
     cardInfo.textContent = "Open Mon-Sun, 8 am - 9 pm";
-    cardInfo.classList.add("card-info");
+    cardInfo.classList.add("card-info", "centered");
 
     subHeader.appendChild(cardTitle);
     subHeader.appendChild(cardInfo);
