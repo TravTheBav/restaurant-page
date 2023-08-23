@@ -3,6 +3,15 @@
     src: url('./ReglisseFill-WyWzn.otf');
 }
 
+@font-face {
+    font-family: 'QueensidesMedium';
+    src: url('./QueensidesMedium-x30zV.ttf');
+}
+
+html {
+    font-size: 12px;
+}
+
 html, body {
     margin: 0;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -22,6 +31,10 @@ header {
     font-size: 4rem;
 }
 
+.large-header {
+    font-size: 5rem;
+}
+
 body {
     min-height: 100%;
     background-image: url('kuddly-krab.png');
@@ -31,10 +44,12 @@ body {
 nav {
     background-color: rgb(157, 237, 181);
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 3rem;
-    border-bottom: solid 3px rgb(22, 19, 19);
-    border-top: solid 3px rgb(22, 19, 19);
+    gap: 1rem;
+    border-bottom: solid 3px black;
+    border-top: solid 3px black;
+    margin-bottom: 4rem;
 }
 
 .tab {
@@ -48,4 +63,54 @@ nav {
 h1 {
     text-align: center;
     font-size: 2.5rem;
+}
+
+.content {
+    background-color: blueviolet;
+    padding: 2rem;
+}
+
+.sub-header h1 {
+    margin: 0px;
+}
+
+.card-info {
+    font-size: 2rem;
+    color: white;
+    font-family: "QueensidesMedium", 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.img-container {
+    display: flex;
+    flex-shrink: 1;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.photo {
+    max-width: 100%;
+    height: auto;
+}
+
+@media only screen and (min-width: 820px) {
+    html {
+        font-size: 16px;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;      
+    }
+
+    .content {
+        border-radius: 1rem;
+        border: solid 3px black;
+        padding: 3rem;
+        width: min(650px, 50vw);
+    }
+
+    nav {
+        gap: 3rem;
+    }
 }
