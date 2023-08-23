@@ -11,7 +11,7 @@ const loadHome = function () {
 
     const cardTitle = document.createElement('h1');
     cardTitle.textContent = "The Kuddly Krab!";
-    cardTitle.classList.add("kuddly-text", "large-header");
+    cardTitle.classList.add("kuddly-text", "large-header", "centered");
 
     const cardInfo = document.createElement('p');
     cardInfo.textContent = "Open Mon-Sun, 8 am - 9 pm";
